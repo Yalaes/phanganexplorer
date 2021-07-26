@@ -1,0 +1,40 @@
+.logo {
+    text-transform: uppercase;
+    font-weight: $font-xbold;
+    display: flex;
+    align-items: center;
+    
+    img {
+        height: 1.5rem;
+        transition: transform .5s cubic-bezier(.46,.5,.33,1.61); 
+    }
+
+    h3 {
+        padding-left: .4rem;
+        transition: transform .25s ease-in-out;
+        font-weight: $font-xbold;
+        
+    }
+
+    &:hover, &:focus  {      
+        img {
+            transform: rotate(180deg) scale(1.2);
+        }
+    }
+}
+
+.cta {
+    font-size: 1rem;
+    display: inline-block;
+    background-color: $clr-cta;
+    padding: .6rem 1.4rem;
+    text-transform: uppercase;
+    font-weight: $font-bold;
+    margin: 1.2rem 0;
+
+    &--small {
+        margin: 0;
+        font-size: .8rem;
+        padding: .2rem .8rem;
+    }
+}

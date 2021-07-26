@@ -4,4 +4,34 @@ header {
     background-size: cover;
     background-position: center center;
     color: $white;
+
+    .nav {
+        padding-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .headlines {
+
+        text-align: center;
+        line-height: 1.1;
+
+        h1 {
+            text-transform: uppercase;
+            font-weight: $font-black;
+            letter-spacing: .1em;
+            font-size: 2rem;
+            margin-top: 5rem;
+        }
+
+        h2 {
+            font-size: .8rem;
+            font-weight: $font-semi-bolt;
+            margin: .5rem 0;
+        }
+   
+       
+    }
+   
 }

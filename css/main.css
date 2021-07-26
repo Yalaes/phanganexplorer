@@ -15,6 +15,17 @@ body {
   line-height: 1.65;
   font-family: "Nunito Sans", sans-serif;
   color: #2D2D2D;
+  font-size: .6rem;
+}
+
+a, a:hover, a:focus, a:visited {
+  text-decoration: none;
+  color: currentColor;
+}
+
+h1, h2, h3, h4 {
+  padding: 0;
+  margin: 0;
 }
 
 .content {
@@ -30,5 +41,69 @@ header {
   background-size: cover;
   background-position: center center;
   color: #eee;
+}
+
+header .nav {
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .headlines {
+  text-align: center;
+  line-height: 1.1;
+}
+
+header .headlines h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: .1em;
+  font-size: 2rem;
+  margin-top: 5rem;
+}
+
+header .headlines h2 {
+  font-size: .8rem;
+  font-weight: 600;
+  margin: .5rem 0;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 1.5rem;
+  transition: transform 0.5s cubic-bezier(0.46, 0.5, 0.33, 1.61);
+}
+
+.logo h3 {
+  padding-left: .4rem;
+  transition: transform .25s ease-in-out;
+  font-weight: 800;
+}
+
+.logo:hover img, .logo:focus img {
+  transform: rotate(180deg) scale(1.2);
+}
+
+.cta {
+  font-size: 1rem;
+  display: inline-block;
+  background-color: #FF2C39;
+  padding: .6rem 1.4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 1.2rem 0;
+}
+
+.cta--small {
+  margin: 0;
+  font-size: .8rem;
+  padding: .2rem .8rem;
 }
 /*# sourceMappingURL=main.css.map */
