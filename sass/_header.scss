@@ -5,7 +5,7 @@ header {
     background-position: center center;
     color: $white;
 
-    .nav {
+    .top-nav {
         padding-top: 1rem;
         display: flex;
         align-items: center;
@@ -26,12 +26,19 @@ header {
         }
 
         h2 {
-            font-size: .8rem;
             font-weight: $font-semi-bolt;
             margin: .5rem 0;
-        }
-   
-       
+        }  
     }
-   
+    
+    nav {
+        margin-top: 1.5rem !important;
+        padding: 0 3%;
+        padding-bottom: 3rem !important;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem
+    }
 }

@@ -3,38 +3,75 @@
     font-weight: $font-xbold;
     display: flex;
     align-items: center;
-    
+
     img {
         height: 1.5rem;
-        transition: transform .5s cubic-bezier(.46,.5,.33,1.61); 
+        transition: transform .5s cubic-bezier(.46, .5, .33, 1.61);
     }
 
-    h3 {
+    .name {
+        font-size: .7rem;
         padding-left: .4rem;
         transition: transform .25s ease-in-out;
         font-weight: $font-xbold;
-        
     }
 
-    &:hover, &:focus  {      
+    &:hover,
+    &:focus {
         img {
-            transform: rotate(180deg) scale(1.2);
+            transform: rotate(180deg);
         }
     }
 }
 
 .cta {
-    font-size: 1rem;
+    font-size: .8rem;
+    line-height: 1;
     display: inline-block;
     background-color: $clr-cta;
     padding: .6rem 1.4rem;
     text-transform: uppercase;
     font-weight: $font-bold;
+    text-align: center;
     margin: 1.2rem 0;
 
     &--small {
         margin: 0;
-        font-size: .8rem;
-        padding: .2rem .8rem;
+        font-size: .7rem;
+        padding: .3rem .8rem;
+    }
+}
+
+.nav-button {
+    min-width: 20ch;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: .7rem;
+    font-weight: $font-bold;
+    letter-spacing: 1px;
+    border: 1px solid currentColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.4rem .8rem;
+    transition: background 250ms ease-in-out, transform 150ms ease;
+
+    &:hover,
+    &:focus {
+        background: $btn-background-color;
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+
+    img {
+        height: 1.5em;
+        max-width: 1.5em;
+    }
+
+    span {
+        font-size: .9em;
     }
 }

@@ -16,6 +16,7 @@ body {
   font-family: "Nunito Sans", sans-serif;
   color: #2D2D2D;
   font-size: .6rem;
+  overflow-x: hidden;
 }
 
 a, a:hover, a:focus, a:visited {
@@ -26,6 +27,18 @@ a, a:hover, a:focus, a:visited {
 h1, h2, h3, h4 {
   padding: 0;
   margin: 0;
+}
+
+button {
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  border: none;
+  font-family: inherit;
+  text-decoration: none;
+  background: none;
+  cursor: pointer;
+  color: currentcolor;
 }
 
 .content {
@@ -43,7 +56,7 @@ header {
   color: #eee;
 }
 
-header .nav {
+header .top-nav {
   padding-top: 1rem;
   display: flex;
   align-items: center;
@@ -64,9 +77,19 @@ header .headlines h1 {
 }
 
 header .headlines h2 {
-  font-size: .8rem;
   font-weight: 600;
   margin: .5rem 0;
+}
+
+header nav {
+  margin-top: 1.5rem !important;
+  padding: 0 3%;
+  padding-bottom: 3rem !important;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .logo {
@@ -81,29 +104,65 @@ header .headlines h2 {
   transition: transform 0.5s cubic-bezier(0.46, 0.5, 0.33, 1.61);
 }
 
-.logo h3 {
+.logo .name {
+  font-size: .7rem;
   padding-left: .4rem;
   transition: transform .25s ease-in-out;
   font-weight: 800;
 }
 
 .logo:hover img, .logo:focus img {
-  transform: rotate(180deg) scale(1.2);
+  transform: rotate(180deg);
 }
 
 .cta {
-  font-size: 1rem;
+  font-size: .8rem;
+  line-height: 1;
   display: inline-block;
   background-color: #FF2C39;
   padding: .6rem 1.4rem;
   text-transform: uppercase;
   font-weight: 700;
+  text-align: center;
   margin: 1.2rem 0;
 }
 
 .cta--small {
   margin: 0;
-  font-size: .8rem;
-  padding: .2rem .8rem;
+  font-size: .7rem;
+  padding: .3rem .8rem;
+}
+
+.nav-button {
+  min-width: 20ch;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border: 1px solid currentColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.4rem .8rem;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+}
+
+.nav-button:hover, .nav-button:focus {
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.nav-button:active {
+  transform: scale(0.98);
+}
+
+.nav-button img {
+  height: 1.5em;
+  max-width: 1.5em;
+}
+
+.nav-button span {
+  font-size: .9em;
 }
 /*# sourceMappingURL=main.css.map */
