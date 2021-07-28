@@ -57,6 +57,7 @@ hr {
 
 header {
   min-height: 80vh;
+  background-color: #2D2D2D;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/hero-image-600.jpg);
   background-size: cover;
   background-position: center center;
@@ -178,7 +179,6 @@ header nav {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  justify-items: center;
   justify-content: center;
   place-items: center;
   row-gap: 2rem;
@@ -187,7 +187,7 @@ header nav {
 .card {
   position: relative;
   margin: 0 3%;
-  max-width: 400px;
+  max-width: 350px;
   height: 100%;
   background: #fff;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -221,8 +221,10 @@ header nav {
 }
 
 .card__content-infos {
-  padding-bottom: 3%;
+  padding: 0 3%;
+  padding-bottom: 5%;
   font-size: .875rem;
+  align-self: end;
 }
 
 .card__content-infos > * {
@@ -262,7 +264,7 @@ header nav {
 .card__label {
   position: absolute;
   z-index: 2;
-  top: 2%;
+  top: 1%;
   left: 2%;
   padding: 1% 2%;
   color: #eee !important;

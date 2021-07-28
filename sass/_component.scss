@@ -81,7 +81,6 @@
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    justify-items: center;
     justify-content: center;
     place-items: center;
     row-gap: 2rem;
@@ -90,7 +89,7 @@
 .card {
     position: relative;
     margin: 0 $space-small;
-    max-width: 400px;
+    max-width: 350px;
     height: 100%;
     background: $pure-white;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -122,8 +121,10 @@
         }
 
         &-infos {
-            padding-bottom: $space-small;
+            padding: 0 $space-small;
+            padding-bottom: $space-medium;
             font-size: .875rem;
+            align-self: end;
         }
 
         &-infos > * {
@@ -166,7 +167,7 @@
     &__label {
         position: absolute;
         z-index: 2;
-        top: 2%;
+        top: 1%;
         left: 2%;
         padding: 1% 2%;
         color: $white !important;
