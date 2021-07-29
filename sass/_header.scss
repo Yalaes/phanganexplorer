@@ -1,7 +1,7 @@
 header {
     min-height: 80vh;
     background-color: $black;
-    background-image: linear-gradient(rgba(black, .6), rgba(black, .6)), url(../images/hero-image-600.jpg);
+    background-image: linear-gradient(rgba(black, .7), rgba(black, .7)), url(../images/hero-image-600.jpg);
     background-size: cover;
     background-position: center center;
     color: $white;
@@ -27,6 +27,7 @@ header {
         }
 
         h2 {
+            font-size: 1rem;
             font-weight: $font-semi-bolt;
             margin: .5rem 0;
         }  

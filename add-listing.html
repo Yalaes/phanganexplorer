@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,400;0,600;0,700;0,800;0,900;1,200&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/main.css">
+    <title>Phangan Explorer</title>
+</head>
+
+<body>
+   
+
+    <div class="form-wrap">
+
+        <div class="top-nav">
+            <a href="/index.html">
+                <div class="logo ">
+                    <i class="fas fa-compass i-compass"></i>
+    
+                    <span class="name">Phangan Explorer</span>
+                    <i class="fas fa-window-close i-close"></i>
+                </div>
+            </a>
+        </div>
+        
+        <h3>Submit your business</h3>
+        <!--   <form action="https://formsubmit.co/yalaes.utrigas@gmail.com" method="POST"> -->
+        <form action="" method="POST">
+
+            <label for="biz-name">Company Name</label>
+            <input type="text" id="biz-name" name="biz-name" placeholder="Business Name.." maxlength="50" required>
+
+            <label for="description">Description</label>
+            <textarea id="description" name="description" rows="4" cols="auto" maxlength="300"
+                placeholder="Pitch your business here..." required></textarea>
+
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" placeholder="Must be located in Koh Phangan.." maxlength="60"
+                required>
+
+            <label for="phoneNumber">Phone Number</label>
+            <input type="text" id="phoneNumber" name="phoneNumber" placeholder="xxxx" required>
+
+            <label for="schedule">Opening hours</label>
+            <input type="text" id="schedule" name="schedule" placeholder="e.g. 10am to 8pm / Closed on Sundays"
+                required>
+
+            <label for="website">Website</label>
+            <input type="text" id="website" name="website"
+                placeholder="your website link, trip advisor or prefered social media.." required>
+
+            <!--       <p>If you don't have a website, we recommend phanganweb.com</p> -->
+
+            <label for="category">Category</label>
+            <select id="category" name="category">
+                <option value="let us choose">let the site choose</option>
+                <option value="food & drink">Food & Drink</option>
+            </select>
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Hi, what's your name?" required>
+
+            <label for="lname">Email</label>
+            <input type="email" id="email" name="email" placeholder="Contact email.." required>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+
+</html>

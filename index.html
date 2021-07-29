@@ -13,24 +13,28 @@
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,400;0,600;0,700;0,800;0,900;1,200&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="css/main.css">
     <title>Phangan Explorer</title>
 </head>
 
 <body>
+
     <header>
         <div class="header-content content">
 
             <div class="top-nav">
                 <a href="./index.html">
-                    <div class="logo">
-                        <img src="images/icons/compass-icon.svg" alt="">
+                    <div class="logo logo--light">
+                        <i class="fas fa-compass i-compass i-compass--light"></i>
 
                         <span class="name">Phangan Explorer</span>
                     </div>
                 </a>
 
-                <a href="#" class="cta cta--small">+ add listing</a>
+                <a href="/add-listing.html" class="cta cta--small">+ add listing</a>
             </div>
 
             <div class="headlines">
@@ -41,41 +45,66 @@
 
             <nav class="content">
                 <button class="nav-button" aria-label="food & drink">
-                    <img src="images/icons/food-icon.svg" alt="food & drink">
+                    <i class="fas fa-pizza-slice i-food"></i>
                     <span>food & drink</span>
                 </button>
+
                 <button class="nav-button" aria-label="restaurants">
-                    <img src="images/icons/restaurants-icon.svg" alt="restaurants">
+                    <i class="fas fa-utensils i-resto"></i>
                     <span>restaurants</span>
                 </button>
+
                 <button class="nav-button" aria-label="accomodation">
-                    <img src="images/icons/accomodation-icon.svg" alt="accomodation">
-                    <span>accomodation</span>
-                </button>
-                <button class="nav-button">
-                    <img src="images/icons/food-icon.svg" alt="food & drink">
-                    <span>food & drink</span>
+                    <i class="fas fa-bed i-hotel"></i>
+                    <span>lodging</span>
                 </button>
 
-                <button class="nav-button">
-                    <img src="images/icons/food-icon.svg" alt="food & drink">
-                    <span>food & drink</span>
+                <button class="nav-button" aria-label="shopping">
+                    <i class="fas fa-shopping-bag i-shopping"></i>
+                    <span>Shopping</span>
                 </button>
 
-                <button class="nav-button">
-                    <img src="images/icons/food-icon.svg" alt="food & drink">
-                    <span>food & drink</span>
+                <button class="nav-button" aria-label="massage and beauty">
+                    <i class="fas fa-spa i-massage"></i>
+                    <span>Massage & Spa</span>
                 </button>
 
-                <button class="nav-button">
-                    <img src="images/icons/food-icon.svg" alt="food & drink">
-                    <span>food & drink</span>
+                <button class="nav-button" aria-label="yoga & health">
+                    <i class="fas fa-spa i-yoga"></i>
+                    <span>yoga & health</span>
                 </button>
 
-                <button class="nav-button">
-                    <img src="images/icons/food-icon.svg" alt="food & drink">
-                    <span>food & drink</span>
+                <button class="nav-button" aria-label="sport & outdoor">
+                    <i class="fas fa-running i-sport"></i>
+                    <span>sport & outdoor</span>
                 </button>
+
+                <button class="nav-button" aria-label="vehicle rental">
+                    <i class="fas fa-motorcycle i-rental"></i>
+                    <span>vehicle rental</span>
+                </button>
+
+                <button class="nav-button" aria-label="tattoo & art">
+                    <i class="fas fa-paint-brush i-tattoo"></i>
+                    <span>tattoo & art</span>
+                </button>
+
+                <button class="nav-button" aria-label="bars & parties">
+                    <i class="fas fa-cocktail i-parties"></i>
+                    <span>bars & parties</span>
+                </button>
+
+                <button class="nav-button" aria-label="Points of interest">
+                    <i class="fas fa-map i-poi"></i>
+                    <span>points of interest</span>
+                </button>
+
+                <button class="nav-button" aria-label="services">
+                    <i class="fas fa-print i-services"></i>
+                    <span>services</span>
+                </button>
+
+               
             </nav>
         </div>
     </header>
@@ -85,21 +114,30 @@
             <h3 id="featured">FEATURED & RECOMMENDED</h3>
             <div class="card-grid">
 
+                <!-- night market  -->
                 <div class="card">
                     <span href="#" class="card__label card__label--featured">featured</span>
                     <div class="card__social-menu">
-                        <a href="#" aria-label="facebook link" class="card__social-menu-icon card__social-menu-icon--facebook"><img src="images/icons/facebook-icon.svg" alt=""></a>
-                        <a href="#" aria-label="facebook link" class="card__social-menu-icon card__social-menu-icon--insta"><img src="images/icons/insta-icon.png" alt=""></a>
-                        <a href="#" aria-label="facebook link" class="card__social-menu-icon card__social-menu-icon--twitter"><img src="images/icons/twitter-icon.svg" alt=""></a>                      
+                        <a href="#" aria-label="facebook link"
+                            class="card__social-menu-icon card__social-menu-icon--facebook"><img
+                                src="images/icons/facebook-icon.svg" alt=""></a>
+                        <a href="#" aria-label="facebook link"
+                            class="card__social-menu-icon card__social-menu-icon--insta"><img
+                                src="images/icons/insta-icon.png" alt=""></a>
+                        <a href="#" aria-label="facebook link"
+                            class="card__social-menu-icon card__social-menu-icon--twitter"><img
+                                src="images/icons/twitter-icon.svg" alt=""></a>
                     </div>
 
                     <!-- <img height="468" width="702" src="images/cardtest.jpg" alt="" class="card__image"> -->
-                    <img alt="tong sala saturday night market" height="400" width="700" src="images/test-350.jpg" srcset="images/test-350.jpg 350w, images/test-700.jpg 700w" sizes="(min-width: 587px) 30vw, 100vw" class="card__image" loading="lazy">
+                    <img alt="tong sala saturday night market" height="400" width="700" src="images/test-350.jpg"
+                        srcset="images/test-350.jpg 350w, images/test-700.jpg 700w"
+                        sizes="(min-width: 587px) 30vw, 100vw" class="card__image" loading="lazy">
                     <div class="card__content">
                         <h4 class="card__content-title">tong sala saturday night market</h4>
                         <p class="card__content-description">“The culinary delights and cultural experience make the
                             locals and tourists alike”</p>
-                        
+
                     </div>
                     <div class="card__content-infos">
 
@@ -132,9 +170,15 @@
                 <div class="card">
                     <span href="#" class="card__label card__label--featured">featured</span>
                     <div class="card__social-menu">
-                        <a href="#" aria-label="facebook link" class="card__social-menu-icon card__social-menu-icon--facebook"><img src="images/icons/facebook-icon.svg" alt=""></a>
-                        <a href="#" aria-label="facebook link" class="card__social-menu-icon card__social-menu-icon--insta"><img src="images/icons/insta-icon.png" alt=""></a>
-                        <a href="#" aria-label="facebook link" class="card__social-menu-icon card__social-menu-icon--twitter"><img src="images/icons/twitter-icon.svg" alt=""></a>                      
+                        <a href="#" aria-label="facebook link"
+                            class="card__social-menu-icon card__social-menu-icon--facebook"><img
+                                src="images/icons/facebook-icon.svg" alt=""></a>
+                        <a href="#" aria-label="facebook link"
+                            class="card__social-menu-icon card__social-menu-icon--insta"><img
+                                src="images/icons/insta-icon.png" alt=""></a>
+                        <a href="#" aria-label="facebook link"
+                            class="card__social-menu-icon card__social-menu-icon--twitter"><img
+                                src="images/icons/twitter-icon.svg" alt=""></a>
                     </div>
 
                     <img src="images/cardtest.jpg" alt="" class="card__image">
@@ -143,7 +187,7 @@
                         <p class="card__content-description">“The culinary delights and cultural experience make the
                             locals and tourists alike The culinary delights and cultural experience make the
                             locals and tourists alike”</p>
-                        
+
                     </div>
                     <div class="card__content-infos">
 
@@ -176,9 +220,15 @@
                 <div class="card">
                     <span href="#" class="card__label card__label--featured">featured</span>
                     <div class="card__social-menu">
-                        <a href="#" aria-label="facebook link" class="card__social-menu-icon card__social-menu-icon--facebook"><img src="images/icons/facebook-icon.svg" alt=""></a>
-                        <a href="#" aria-label="facebook link" class="card__social-menu-icon card__social-menu-icon--insta"><img src="images/icons/insta-icon.png" alt=""></a>
-                        <a href="#" aria-label="facebook link" class="card__social-menu-icon card__social-menu-icon--twitter"><img src="images/icons/twitter-icon.svg" alt=""></a>                      
+                        <a href="#" aria-label="facebook link"
+                            class="card__social-menu-icon card__social-menu-icon--facebook"><img
+                                src="images/icons/facebook-icon.svg" alt=""></a>
+                        <a href="#" aria-label="facebook link"
+                            class="card__social-menu-icon card__social-menu-icon--insta"><img
+                                src="images/icons/insta-icon.png" alt=""></a>
+                        <a href="#" aria-label="facebook link"
+                            class="card__social-menu-icon card__social-menu-icon--twitter"><img
+                                src="images/icons/twitter-icon.svg" alt=""></a>
                     </div>
 
                     <img src="images/cardtest.jpg" alt="" class="card__image">
@@ -187,7 +237,7 @@
                         <p class="card__content-description">“The culinary delights and cultural experience make the
                             locals and tourists alike The culinary delights and cultural experience make the
                             locals and tourists alike”</p>
-                        
+
                     </div>
                     <div class="card__content-infos">
 
@@ -220,9 +270,15 @@
                 <div class="card">
                     <span href="#" class="card__label card__label--featured">featured</span>
                     <div class="card__social-menu">
-                        <a href="#" aria-label="facebook link" class="card__social-menu-icon card__social-menu-icon--facebook"><img src="images/icons/facebook-icon.svg" alt=""></a>
-                        <a href="#" aria-label="facebook link" class="card__social-menu-icon card__social-menu-icon--insta"><img src="images/icons/insta-icon.png" alt=""></a>
-                        <a href="#" aria-label="facebook link" class="card__social-menu-icon card__social-menu-icon--twitter"><img src="images/icons/twitter-icon.svg" alt=""></a>                      
+                        <a href="#" aria-label="facebook link"
+                            class="card__social-menu-icon card__social-menu-icon--facebook"><img
+                                src="images/icons/facebook-icon.svg" alt=""></a>
+                        <a href="#" aria-label="facebook link"
+                            class="card__social-menu-icon card__social-menu-icon--insta"><img
+                                src="images/icons/insta-icon.png" alt=""></a>
+                        <a href="#" aria-label="facebook link"
+                            class="card__social-menu-icon card__social-menu-icon--twitter"><img
+                                src="images/icons/twitter-icon.svg" alt=""></a>
                     </div>
 
                     <img src="images/cardtest.jpg" alt="" class="card__image">
@@ -231,7 +287,7 @@
                         <p class="card__content-description">“The culinary delights and cultural experience make the
                             locals and tourists alike The culinary delights and cultural experience make the
                             locals and tourists alike”</p>
-                        
+
                     </div>
                     <div class="card__content-infos">
 
@@ -264,9 +320,15 @@
                 <div class="card">
                     <span href="#" class="card__label card__label--featured">featured</span>
                     <div class="card__social-menu">
-                        <a href="#" aria-label="facebook link" class="card__social-menu-icon card__social-menu-icon--facebook"><img src="images/icons/facebook-icon.svg" alt=""></a>
-                        <a href="#" aria-label="facebook link" class="card__social-menu-icon card__social-menu-icon--insta"><img src="images/icons/insta-icon.png" alt=""></a>
-                        <a href="#" aria-label="facebook link" class="card__social-menu-icon card__social-menu-icon--twitter"><img src="images/icons/twitter-icon.svg" alt=""></a>                      
+                        <a href="#" aria-label="facebook link"
+                            class="card__social-menu-icon card__social-menu-icon--facebook"><img
+                                src="images/icons/facebook-icon.svg" alt=""></a>
+                        <a href="#" aria-label="facebook link"
+                            class="card__social-menu-icon card__social-menu-icon--insta"><img
+                                src="images/icons/insta-icon.png" alt=""></a>
+                        <a href="#" aria-label="facebook link"
+                            class="card__social-menu-icon card__social-menu-icon--twitter"><img
+                                src="images/icons/twitter-icon.svg" alt=""></a>
                     </div>
 
                     <img src="images/cardtest.jpg" alt="" class="card__image">
@@ -274,8 +336,9 @@
                         <h4 class="card__content-title">Phanganer</h4>
                         <p class="card__content-description">“The culinary delights and cultural experience make the
                             locals and tourists alike The culinary delights and cultural experience make the
-                            locals and tourists alike Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet eaque at error architecto nobis consectetur quo asperiores maiores iure dicta.”</p>
-                        
+                            locals and tourists alike Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet
+                            eaque at error architecto nobis consectetur quo asperiores maiores iure dicta.”</p>
+
                     </div>
                     <div class="card__content-infos">
 

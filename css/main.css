@@ -55,10 +55,19 @@ hr {
   padding: 0 3%;
 }
 
+.card-grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  justify-content: center;
+  place-items: center;
+  row-gap: 2rem;
+}
+
 header {
   min-height: 80vh;
   background-color: #2D2D2D;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/hero-image-600.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/hero-image-600.jpg);
   background-size: cover;
   background-position: center center;
   color: #eee;
@@ -85,6 +94,7 @@ header .headlines h1 {
 }
 
 header .headlines h2 {
+  font-size: 1rem;
   font-weight: 600;
   margin: .5rem 0;
 }
@@ -101,26 +111,32 @@ header nav {
 }
 
 .logo {
+  width: 100%;
   text-transform: uppercase;
   font-weight: 800;
   display: flex;
   align-items: center;
   font-size: 1rem;
+  color: #2D2D2D;
 }
 
-.logo img {
-  height: 1.5em;
+.logo--light {
+  color: #eee;
+}
+
+.logo i {
+  font-size: 1.4em;
   transition: transform 0.5s cubic-bezier(0.46, 0.5, 0.33, 1.61);
 }
 
 .logo .name {
-  font-size: .7em;
+  font-size: .8em;
   padding-left: .4em;
   transition: transform .25s ease-in-out;
   font-weight: 800;
 }
 
-.logo:hover img, .logo:focus img {
+.logo:hover i.i-compass, .logo:focus i.i-compass {
   transform: rotate(180deg);
 }
 
@@ -134,6 +150,11 @@ header nav {
   font-weight: 700;
   text-align: center;
   margin: 1.2rem 0;
+  transition: background .25s ease;
+}
+
+.cta:hover, .cta:focus, .cta:active {
+  background-color: #FF5E68;
 }
 
 .cta--small {
@@ -143,7 +164,7 @@ header nav {
 }
 
 .nav-button {
-  min-width: 20ch;
+  min-width: 22ch;
   text-transform: capitalize;
   text-align: center;
   font-size: .7rem;
@@ -155,6 +176,7 @@ header nav {
   justify-content: center;
   gap: 0.5rem;
   padding: 0.2rem 0;
+  margin-bottom: .2rem;
   transition: background 250ms ease-in-out, transform 150ms ease;
 }
 
@@ -166,22 +188,75 @@ header nav {
   transform: scale(0.98);
 }
 
-.nav-button img {
-  height: 1.5em;
-  max-width: 1.5em;
+.nav-button i {
+  font-size: 1.5em;
 }
 
-.nav-button span {
-  font-size: .9em;
+.i-food {
+  color: #F58231;
 }
 
-.card-grid {
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  justify-content: center;
-  place-items: center;
-  row-gap: 2rem;
+.i-resto {
+  color: #E6194B;
+}
+
+.i-hotel {
+  color: #5F81FF;
+}
+
+.i-shopping {
+  color: #FFE119;
+}
+
+.i-massage {
+  color: #F032E6;
+}
+
+.i-yoga {
+  color: #DCBEFF;
+}
+
+.i-sport {
+  color: #3CB44B;
+}
+
+.i-rental {
+  color: #42D4F4;
+}
+
+.i-tattoo {
+  color: #CE7B1C;
+}
+
+.i-parties {
+  color: #FFD8B1;
+}
+
+.i-poi {
+  color: #BFEF45;
+}
+
+.i-services {
+  color: #59CDC0;
+}
+
+.i-compass {
+  color: #2D2D2D;
+}
+
+.i-compass--light {
+  color: #eee;
+}
+
+.i-close {
+  display: inline-block;
+  margin-left: auto;
+}
+
+.card-wrap h3 {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1rem;
 }
 
 .card {
@@ -316,9 +391,49 @@ header nav {
   background-color: #1DA1F2;
 }
 
-.card-wrap h3 {
+.form-wrap {
+  position: relative;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.form-wrap h3 {
+  margin: 2rem 1rem;
   text-align: center;
-  padding: 2rem;
+}
+
+input[type=text], input, textarea, select {
+  font-family: inherit;
+  font-size: 1em;
+  width: 100%;
+  padding: .8rem 1rem;
+  margin: .3rem 0 .7rem;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
   font-size: 1rem;
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 2rem 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+textarea {
+  resize: none;
 }
 /*# sourceMappingURL=main.css.map */

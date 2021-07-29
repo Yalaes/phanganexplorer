@@ -4,3 +4,12 @@
     margin: 0 auto;
     padding: 0 3%;
 }
+
+.card-grid {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    justify-content: center;
+    place-items: center;
+    row-gap: 2rem;
+}

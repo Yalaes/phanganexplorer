@@ -1,17 +1,23 @@
 .logo {
+    width: 100%;
     text-transform: uppercase;
     font-weight: $font-xbold;
     display: flex;
     align-items: center;
     font-size: 1rem;
+    color: $black;
 
-    img {
-        height: 1.5em;
+    &--light {
+        color: $white;
+    }
+
+    i {
+        font-size: 1.4em;
         transition: transform .5s cubic-bezier(.46, .5, .33, 1.61);
     }
 
     .name {
-        font-size: .7em;
+        font-size: .8em;
         padding-left: .4em;
         transition: transform .25s ease-in-out;
         font-weight: $font-xbold;
@@ -19,7 +25,7 @@
 
     &:hover,
     &:focus {
-        img {
+        i.i-compass {
             transform: rotate(180deg);
         }
     }
@@ -36,6 +42,12 @@
     text-align: center;
     margin: 1.2rem 0;
 
+    transition: background .25s ease;
+
+    &:hover, &:focus, &:active {
+        background-color: $clr-cta-light;
+    }
+
     &--small {
         margin: 0;
         font-size: .7rem;
@@ -44,7 +56,7 @@
 }
 
 .nav-button {
-    min-width: 20ch;
+    min-width: 22ch;
     text-transform: capitalize;
     text-align: center;
     font-size: .7rem;
@@ -56,6 +68,7 @@
     justify-content: center;
     gap: 0.5rem;
     padding: 0.2rem 0;
+    margin-bottom: .2rem;
     transition: background 250ms ease-in-out, transform 150ms ease;
 
     &:hover,
@@ -67,158 +80,73 @@
         transform: scale(0.98);
     }
 
-    img {
-        height: 1.5em;
-        max-width: 1.5em;
-    }
-
-    span {
-        font-size: .9em;
-    }
-}
-
-.card-grid {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    justify-content: center;
-    place-items: center;
-    row-gap: 2rem;
-}
-
-.card {
-    position: relative;
-    margin: 0 $space-small;
-    max-width: 350px;
-    height: 100%;
-    background: $pure-white;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    display: grid;
-    grid-template-rows: max-content 1fr;
-
-    &__image {
-        width: 100%;
-        height: 12.5rem;
-        object-fit: cover;
-    }
-
-    &__content {
-        padding: 0 $space-small;
-
-        &-title {
-            text-transform: uppercase;
-            line-height: 1.3;
-            font-weight: $font-bold;
-            padding-top: 1.5em;
-        }
-
-        &-description {
-            font-style: italic;
-        }
-
-        &-link {
-            font-weight: normal !important;
-        }
-
-        &-infos {
-            padding: 0 $space-small;
-            padding-bottom: $space-medium;
-            font-size: .875rem;
-            align-self: end;
-        }
-
-        &-infos > * {
-           display: flex;
-           align-items: center;
-           gap: .5em;
-           color: $grey;
-           font-weight: $font-xlight;
-
-           &:not(:last-child) {
-               padding-bottom: .2rem;
-           }
-           
-
-           img {
-               height: 1em;
-               width: auto;
-           }
-        }
-    }
-
-    &__footer {
-        padding: 0 $space-small;
-
-        &-schedule {
-            text-align: center;
-            font-size: .8em;
-            padding-top: 1%;
-            padding-bottom: 1%;
-            color: $grey;
-        }
-
-    }
-
-    hr {
-        margin-left: -$space-small;
-        width: 106%;
-    }
-
-    &__label {
-        position: absolute;
-        z-index: 2;
-        top: 1%;
-        left: 2%;
-        padding: 1% 2%;
-        color: $white !important;
-        display: inline-block;
-        background-color: $color-featured;
-        text-transform: uppercase;
-        font-weight: $font-xbold;
-        font-size: .7em;
-    }
-
-    &__social-menu {
-        position: absolute;
-        line-height: 1;
-        top: 11.4rem;
-        left: 0;
-        width: 100%;
-
-        display: flex;
-        justify-content: flex-end;
-        gap: 3%;
-        padding-right: $space-small;
-
-        &-icon {
-            width: 2.2em;
-            height: 2.2em;
-            border-radius: 50%;
-            background-color: red;
-            border: 3px solid $pure-white;
-
-            display: flex;
-            align-items: stretch;
-            justify-content: stretch;
-
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-
-            &--facebook {
-                background-color: $pure-white;
-            }
-
-            &--insta {
-                background-color: $color-insta;
-            }
-
-            &--twitter {
-                background-color: $color-twitter;
-            }
-        }
+    i {
+        font-size: 1.5em;
     }
 
 }
+
+
+// nav button icon colors 
+.i-food {
+    color: $clr-food;
+}
+
+.i-resto {
+    color: $clr-resto;
+}
+
+.i-hotel {
+    color: $clr-hotel;
+}
+
+.i-shopping {
+    color: $clr-shopping;
+}
+
+.i-massage {
+    color: $clr-massage;
+}
+
+.i-yoga {
+    color: $clr-yoga;
+}
+
+.i-sport {
+    color: $clr-sport;
+}
+
+.i-rental {
+    color: $clr-rental;
+}
+
+.i-tattoo {
+    color: $clr-tattoo;
+}
+
+.i-parties {
+    color: $clr-parties;
+}
+
+.i-poi {
+    color: $clr-poi;
+}
+
+.i-services {
+    color: $clr-services;
+}
+
+.i-compass {
+    color: $black;
+
+    &--light {
+        color: $white;
+    }
+}
+
+.i-close {
+    display: inline-block;
+    margin-left: auto;
+}
+
+
