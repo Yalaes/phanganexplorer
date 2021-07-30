@@ -76,18 +76,28 @@
         width: 106%;
     }
 
-    &__label {
+    &::before {
         position: absolute;
+        content: "";
         z-index: 2;
         top: 1%;
         left: 2%;
-        padding: 1% 2%;
+        padding: 2px 6px;
         color: $white !important;
-        display: inline-block;
-        background-color: $color-featured;
+        display: inline-block;     
         text-transform: uppercase;
         font-weight: $font-xbold;
-        font-size: .7em;
+        font-size: .6em;  
+    }
+
+    &.featured::before {
+        content: "featured";
+        background-color: $color-featured;
+    }
+
+    &.recommended::before {
+        content: "recommended";
+        background-color: $color-recommended;
     }
 
     &__social-menu {

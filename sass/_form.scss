@@ -10,11 +10,30 @@
         margin: 2rem 1rem;
         text-align: center;
     }
+
+    p {
+      margin: 0;
+      margin-bottom: .5rem;
+      padding: 0;
+
+      em {
+        font-size: .9em;
+
+        a {
+          color: #4CAF50;
+          font-weight: $font-bold;
+
+          &:hover, &:focus, &:active {
+            color: #45a049;
+          }
+        }
+      }
+    }
   }
   
-  input[type=text], input, textarea, select {
+  input, textarea, select {
     font-family: inherit;
-    font-size: 1em;
+    font-size: .9em;
     width: 100%;
     padding: .8rem 1rem;
     margin: .3rem 0 .7rem;
@@ -36,12 +55,17 @@
     cursor: pointer;
   }
   
-  input[type=submit]:hover {
+  input[type=submit]:hover, input[type=submit]:focus {
     background-color: #45a049;
   }
   
   textarea {
     resize:none;
+  }
+
+  select {
+    max-width: 100%;
+    font-size: .8em;
   }
   
   

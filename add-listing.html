@@ -41,14 +41,14 @@
         <form action="" method="POST">
 
             <label for="biz-name">Company Name</label>
-            <input type="text" id="biz-name" name="biz-name" placeholder="Business Name.." maxlength="50" required>
+            <input type="text" id="biz-name" name="biz-name" placeholder="business Name.." maxlength="50" required>
 
             <label for="description">Description</label>
             <textarea id="description" name="description" rows="4" cols="auto" maxlength="300"
                 placeholder="Pitch your business here..." required></textarea>
 
             <label for="address">Address</label>
-            <input type="text" id="address" name="address" placeholder="Must be located in Koh Phangan.." maxlength="60"
+            <input type="text" id="address" name="address" placeholder="must be located in Koh Phangan.." maxlength="60"
                 required>
 
             <label for="phoneNumber">Phone Number</label>
@@ -60,21 +60,34 @@
 
             <label for="website">Website</label>
             <input type="text" id="website" name="website"
-                placeholder="your website link, trip advisor or prefered social media.." required>
+                placeholder="your website url..">
 
-            <!--       <p>If you don't have a website, we recommend phanganweb.com</p> -->
+                 <p> <em>Need a website? We recommend <a href="https://www.phanganweb.com/">phanganweb</a></em></p>
 
             <label for="category">Category</label>
             <select id="category" name="category">
-                <option value="let us choose">let the site choose</option>
-                <option value="food & drink">Food & Drink</option>
+                <option value="fooddrink">Food & Drink</option>
+                <option value="restaurants">Restaurants</option>
+                <option value="lodging">lodging</option>
+                <option value="shopping">Shopping</option>
+                <option value="massage">Massage & Spa</option>
+                <option value="yoga">Yoga & Health</option>
+                <option value="sport">sport & Outdoor</option>
+                <option value="rental">vehicle rental</option>
+                <option value="tattoo">tattoo & art</option>
+                <option value="parties">Bars & Parties</option>
+                <option value="visit">Visit</option>
+                <option value="services">Services</option>
             </select>
 
+            <label for="social">Social Media</label>
+            <textarea id="social" name="social" placeholder="social media links - 3 max" maxlength="200"></textarea>
+
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Hi, what's your name?" required>
+            <input type="text" id="name" name="name" placeholder="contact name" maxlength="50" required>
 
             <label for="lname">Email</label>
-            <input type="email" id="email" name="email" placeholder="Contact email.." required>
+            <input type="email" id="email" name="email" placeholder="contact email.." maxlength="50" required>
 
             <input type="submit" value="Submit">
         </form>

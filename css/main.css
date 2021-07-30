@@ -65,7 +65,6 @@ hr {
 }
 
 header {
-  min-height: 80vh;
   background-color: #2D2D2D;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/hero-image-600.jpg);
   background-size: cover;
@@ -336,18 +335,28 @@ header nav {
   width: 106%;
 }
 
-.card__label {
+.card::before {
   position: absolute;
+  content: "";
   z-index: 2;
   top: 1%;
   left: 2%;
-  padding: 1% 2%;
+  padding: 2px 6px;
   color: #eee !important;
   display: inline-block;
-  background-color: #5F81FF;
   text-transform: uppercase;
   font-weight: 800;
-  font-size: .7em;
+  font-size: .6em;
+}
+
+.card.featured::before {
+  content: "featured";
+  background-color: #5F81FF;
+}
+
+.card.recommended::before {
+  content: "recommended";
+  background-color: #e20fd8;
 }
 
 .card__social-menu {
@@ -405,9 +414,28 @@ header nav {
   text-align: center;
 }
 
-input[type=text], input, textarea, select {
+.form-wrap p {
+  margin: 0;
+  margin-bottom: .5rem;
+  padding: 0;
+}
+
+.form-wrap p em {
+  font-size: .9em;
+}
+
+.form-wrap p em a {
+  color: #4CAF50;
+  font-weight: 700;
+}
+
+.form-wrap p em a:hover, .form-wrap p em a:focus, .form-wrap p em a:active {
+  color: #45a049;
+}
+
+input, textarea, select {
   font-family: inherit;
-  font-size: 1em;
+  font-size: .9em;
   width: 100%;
   padding: .8rem 1rem;
   margin: .3rem 0 .7rem;
@@ -429,11 +457,16 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+input[type=submit]:hover, input[type=submit]:focus {
   background-color: #45a049;
 }
 
 textarea {
   resize: none;
+}
+
+select {
+  max-width: 100%;
+  font-size: .8em;
 }
 /*# sourceMappingURL=main.css.map */
