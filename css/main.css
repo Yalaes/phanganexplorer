@@ -424,16 +424,9 @@ header nav {
   font-size: .9em;
 }
 
-.form-wrap p em a {
-  color: #4CAF50;
-  font-weight: 700;
-}
-
-.form-wrap p em a:hover, .form-wrap p em a:focus, .form-wrap p em a:active {
-  color: #45a049;
-}
-
-input, textarea, select {
+input,
+textarea,
+select {
   font-family: inherit;
   font-size: .9em;
   width: 100%;
@@ -445,19 +438,38 @@ input, textarea, select {
   box-sizing: border-box;
 }
 
+input[type=file] {
+  background-color: white;
+}
+
+input[type=file]::file-selector-button {
+  padding: .4rem .7rem;
+  border: 1px solid #ccc;
+}
+
+input[type=file]::file-selector-button:hover, input[type=file]::file-selector-button:focus {
+  border-color: black;
+}
+
+input[type=checkbox] {
+  display: inline-block;
+  width: auto;
+  vertical-align: text-top;
+}
+
 input[type=submit] {
   font-size: 1rem;
   width: 100%;
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
-  margin: 2rem 0;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
-input[type=submit]:hover, input[type=submit]:focus {
+input[type=submit]:hover,
+input[type=submit]:focus {
   background-color: #45a049;
 }
 
@@ -468,5 +480,32 @@ textarea {
 select {
   max-width: 100%;
   font-size: .8em;
+}
+
+.link-form {
+  color: #4CAF50;
+  font-weight: 700;
+}
+
+.link-form:hover, .link-form:focus, .link-form:active {
+  color: #45a049;
+}
+
+.link-form--terms {
+  font-weight: normal;
+  color: currentColor;
+  text-decoration: underline;
+  text-decoration-color: #ccc;
+}
+
+.link-form--terms:hover, .link-form--terms:focus, .link-form--terms:active {
+  font-weight: bold;
+  color: currentColor;
+}
+
+.conditions {
+  margin: 3rem 0;
+  padding: 1rem;
+  border: 1px solid #ccc;
 }
 /*# sourceMappingURL=main.css.map */
